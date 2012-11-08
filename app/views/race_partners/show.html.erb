@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Race:</b>
+  <%= @race.name %>
+</p>
+
+<p>
+  <b>Charity:</b>
+  <%= @race_partner.charity.name %>
+</p>
+
+<p>
+  <b>Total slots:</b>
+  <%= @race_partner.total_slots %>
+</p>
+
+<p>
+  <b>Available slots:</b>
+  <%= @race_partner.available_slots %>
+</p>
+
+<p>
+  <b>Donation amount:</b>
+  <%= @race_partner.donation_amount %>
+</p>
+
+
+<%= link_to 'Edit', edit_race_partner_path(@race_partner) %> |
+<%= link_to 'Back', race_partners_path %>

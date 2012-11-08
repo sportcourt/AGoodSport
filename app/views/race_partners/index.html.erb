@@ -1,0 +1,31 @@
+<h1>Listing race_partners</h1>
+
+<table>
+  <tr>
+    <th>Race</th>
+    <th>Charity</th>
+    <th>Total slots</th>
+    <th>Available slots</th>
+    <th>Donation amount</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @race_partners.each do |race_partner| %>
+  <tr>
+    <td><%= race_partner.race_id %></td>
+    <td><%= race_partner.charity_id %></td>
+    <td><%= race_partner.total_slots %></td>
+    <td><%= race_partner.available_slots %></td>
+    <td><%= race_partner.donation_amount %></td>
+    <td><%= link_to 'Show', race_partner %></td>
+    <td><%= link_to 'Edit', edit_race_partner_path(race_partner) %></td>
+    <td><%= link_to 'Destroy', race_partner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Race partner', new_race_partner_path %>
