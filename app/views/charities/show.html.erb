@@ -6,24 +6,26 @@
 </p>
 
 <p>
-  <b>Name:</b>
-  <%= @charity.url %>
-</p>
-
-<p>
-  <b>Name:</b>
+  <b>Contact:</b>
   <%= @charity.contact %>
 </p>
 
 <p>
-  <b>Name:</b>
+  <b>Email:</b>
   <%= @charity.email %>
 </p>
 
 <p>
-  <b>Name:</b>
+  <b>Phone:</b>
   <%= @charity.phone %>
 </p>
 
-<%= link_to 'Edit', edit_charity_path(@charity) %> |
-<%= link_to 'Back', charities_path %>
+<p>
+  <b>Website:</b>
+  <%= @charity.website %>
+</p>
+
+
+| <%= link_to 'Edit', edit_charity_path(@charity) %> |
+<%= link_to 'View all Charities', charities_path %> |
+<%= link_to 'Destroy', @charity, method: :delete, data: { confirm: 'Are you sure?' } %> |

@@ -1,19 +1,22 @@
-<h1>Listing charities</h1>
+<h1>Bank of America Chicago Marathon Official Charity Partners</h1>
 
 <table>
   <tr>
     <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Contact</th>
+    <th>Email</th>
+    <th>Phone</th>
+		<th>Website</th>
   </tr>
+
 
 <% @charities.each do |charity| %>
   <tr>
-    <td><%= charity.name %></td>
-    <td><%= link_to 'Show', charity %></td>
-    <td><%= link_to 'Edit', edit_charity_path(charity) %></td>
-    <td><%= link_to 'Destroy', charity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to charity.name, charity %></td>
+		<td><%= charity.contact %></td>
+		<td><%= charity.email %></td>
+		<td><%= charity.phone %></td>
+		<td><%= charity.website %></td>
   </tr>
 <% end %>
 </table>
