@@ -3,5 +3,6 @@ class RacePartner < ActiveRecord::Base
   
   belongs_to :race
   belongs_to :charity
+  belongs_to :organization
   
 end

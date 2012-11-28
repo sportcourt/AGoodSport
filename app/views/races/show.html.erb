@@ -5,6 +5,35 @@
   <%= @race.name %>
 </p>
 
+<p>
+  <b>City:</b>
+  <%= @race.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @race.state %>
+</p>
+
+<p>
+  <b>Distance:</b>
+  <%= @race.distance %> <%= @race.unit %>
+</p>
+
+<p>
+  <b>Date and Time:</b>
+	<% if @race.start_time.present? %>
+  	<%= @race.start_time.strftime("%A, %B %d, %Y, %I:%M%P") %>
+	<% else %>
+		"Date/Time TBD."
+	<% end %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @race.notes %>
+</p>
+
 
 <%= link_to 'Edit', edit_race_path(@race) %> |
-<%= link_to 'Back', races_path %>
+<%= link_to 'All Races', races_path %>

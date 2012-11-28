@@ -14,7 +14,7 @@ class RacesController < ApplicationController
   # GET /races/1.json
   def show
     @race = Race.find(params[:id])
-
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @race }

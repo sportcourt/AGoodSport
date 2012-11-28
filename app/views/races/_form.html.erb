@@ -31,6 +31,15 @@
 	    <%= f.label :unit %><br />
 	    <%= f.select :unit, ["Miles", "Kilometers"] %>
 	  </div>
+		<div class="field">
+	    <%= f.label :datetime %><br />
+	    <%= f.text_field :datetime %>
+	  </div>
+		<div class="field">
+	    <%= f.label :notes %><br />
+	    <%= f.text_field :notes %>
+	  </div>
+	
   <div class="actions">
     <%= f.submit %>
   </div>
