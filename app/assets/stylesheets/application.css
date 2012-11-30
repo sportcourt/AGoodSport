@@ -30,3 +30,63 @@ width: 960px;
 min-height: 400px;
 background: url(http://agoodsport.net/images/bg_content_wrap.png) repeat-y top left;
 }
+
+#header {
+	width:960px;
+	height:144px;
+	position:relative;
+	z-index:10;
+	background:url(http://agoodsport.net/images/bg_header.png) no-repeat bottom left;
+}
+#header a.home {
+	display:block;
+	margin:0;
+	padding:0;
+	z-index:25;
+	position:absolute;
+	top:0px;
+	left:-20px;
+	width:225px;
+	height:172px;
+}
+#header h1 {
+	text-indent:-100000em;
+	/*cursor:pointer;*/
+	display:block;
+	position:absolute;
+	top:0px;
+	left:-30px;
+	width:374px;
+	height:173px;
+	background:url(http://agoodsport.net/images/logo_final.png) no-repeat top left;
+	z-index:12;
+}
+#header h1 a {
+	margin:0;
+	padding:0;
+	border:none;
+	display:block;
+	width:374px;
+	height:173px;
+	outline:none;
+}
+#header a.ios {
+	position:absolute;
+	right:139px;
+	top:43px;
+}
+#header a.android {
+	position:absolute;
+	right:5px;
+	top:43px;	
+}
+#header img.tagline {
+	position:absolute;	
+	left:206px;
+	bottom:14px;
+}
+#header .app-explain {
+	position:absolute;
+	right:-22px;
+	bottom:-10px;
+}
