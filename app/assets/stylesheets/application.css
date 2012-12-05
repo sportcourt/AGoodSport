@@ -58,7 +58,7 @@ background: url(http://agoodsport.net/images/bg_content_wrap.png) repeat-y top l
 	left:-30px;
 	width:374px;
 	height:173px;
-	background:url(http://agoodsport.net/images/logo_final.png) no-repeat top left;
+	background:url(/images/logo.png) no-repeat top left;
 	z-index:12;
 }
 #header h1 a {
